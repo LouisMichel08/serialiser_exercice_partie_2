@@ -36,5 +36,13 @@ import jsonpickle
 Json_string = jsonpickle.encode(E)
 print(Json_string)
 
+# Sérialiser
 with open("test.json", "w") as F:
     F.write(Json_string)
+
+# Désérialiser
+with open("test.json", "r") as F:
+    Json_string1 = F.readline()
+
+E2 = jsonpickle.decode(Json_string1)
+print(E2.nom, E2.Local.numero_local)
