@@ -23,6 +23,7 @@ print(E.nom)
 print(E.Local.numero_local)
 print("*********************")
 
+
 #json
 try:
     with open("./", "w") as F:
